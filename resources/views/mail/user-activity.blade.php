@@ -1,0 +1,1 @@
+{{$user->name}} You have created login at <?=date('h:i:s') ?>

@@ -9,7 +9,9 @@
 namespace App\Http\Controllers;
 
 
+use App\Events\UserLoggedIn;
 use App\Repositories\Eloquent\UserDao;
+use Illuminate\Support\Facades\Event;
 use Symfony\Component\HttpFoundation\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -35,6 +37,7 @@ private $userDao;
         {
             return response('invalid credentials');
         }
+        Event::fire(new UserLoggedIn(Auth::user()));
         return response('authenticated');
     }
 }
