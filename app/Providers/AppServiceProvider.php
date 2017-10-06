@@ -23,6 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('App\Repositories\Contracts\IRepository','App\Repositories\Eloquent\UserDao');
+        $this->app->singleton('App\Repositories\Contracts\RepositoryInterface','App\Repositories\Eloquent\UserDao');
     }
 }

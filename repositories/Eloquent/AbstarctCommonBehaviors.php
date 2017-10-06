@@ -7,11 +7,11 @@
  */
 
 namespace App\Repositories\Abs;
-use App\Repositories\Contracts\IRepository,
+use App\Repositories\Contracts\RepositoryInterface,
     Illuminate\Database\Eloquent\Model,
     Illuminate\Container\Container as App;
 
-abstract class AbstractCommonBehaviors implements IRepository
+abstract class AbstractCommonBehaviors implements RepositoryInterface
 {
 
     /**

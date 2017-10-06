@@ -9,7 +9,7 @@
 namespace App\Repositories\Contracts;
 
 
-interface IRepository
+interface RepositoryInterface
 {
     public function getTable($tableName);
     public function createRecord(array $attributes);
