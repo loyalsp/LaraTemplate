@@ -1,0 +1,1 @@
+{{$user}} this mail was sent by cron job at <?=date('h:i:s') ?>
