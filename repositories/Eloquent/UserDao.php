@@ -6,8 +6,8 @@
  * Time: 9:00 PM
  */
 
-namespace App\Repositories\Eloquent;
-use App\Repositories\Abs\AbstractCommonBehaviors;
+namespace Repositories\Eloquent;
+
 
 class UserDao extends AbstractCommonBehaviors
 {

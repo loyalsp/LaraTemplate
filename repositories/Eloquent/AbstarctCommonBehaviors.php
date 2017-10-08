@@ -6,10 +6,12 @@
  * Time: 8:50 PM
  */
 
-namespace App\Repositories\Abs;
-use App\Repositories\Contracts\RepositoryInterface,
+namespace Repositories\Eloquent;
+
+use Repositories\Contracts\RepositoryInterface,
     Illuminate\Database\Eloquent\Model,
-    Illuminate\Container\Container as App;
+    Illuminate\Container\Container as App,
+    Exception;
 
 abstract class AbstractCommonBehaviors implements RepositoryInterface
 {

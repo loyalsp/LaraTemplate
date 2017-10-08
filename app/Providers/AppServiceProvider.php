@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use Repositories\Contracts\RepositoryInterface;
+use Repositories\Eloquent\UserDao;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,6 +26,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('App\Repositories\Contracts\RepositoryInterface','App\Repositories\Eloquent\UserDao');
+        $this->app->singleton(RepositoryInterface::class,UserDao::class);
     }
 }
